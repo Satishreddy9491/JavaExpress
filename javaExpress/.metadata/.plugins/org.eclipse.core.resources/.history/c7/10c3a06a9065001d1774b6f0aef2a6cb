@@ -1,0 +1,15 @@
+package com.javaExpress.streams;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Comparator_Streams {
+	public static void main(String[] args) {
+		ArrayList<Employe>a=new ArrayList<>();
+		a.add(new Employe("satish",23456789));
+		a.add(new Employe("reddy",5678));
+		a.add(new Employe("satish",987654567));
+		a.add(new Employe("satish",1234543));
+		a.add(new Employe("satish",43212345));
+	}
+}

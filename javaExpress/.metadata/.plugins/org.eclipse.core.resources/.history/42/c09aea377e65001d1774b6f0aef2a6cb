@@ -1,0 +1,22 @@
+package com.javaExpress.streams;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+public class D_sorted {
+	public static void main(String[] args) {
+		ArrayList<String>s=new ArrayList<>();
+		s.add("Java");
+		s.add("python");
+		s.add("aws");
+		s.add("Php");
+		s.add("c++");
+		
+		List<String> result = s.stream().sorted().collect(Collectors.toList());
+		System.out.println("Accesnding order");
+		System.out.println(result);
+	}
+	
+}

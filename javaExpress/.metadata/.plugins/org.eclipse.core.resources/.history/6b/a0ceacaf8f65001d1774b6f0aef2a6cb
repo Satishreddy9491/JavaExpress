@@ -1,0 +1,11 @@
+package com.javaExpress.streams;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Comparator_Streams {
+	public static void main(String[] args) {
+		List<Employe>a=new ArrayList<>();
+		a.
+	}
+}

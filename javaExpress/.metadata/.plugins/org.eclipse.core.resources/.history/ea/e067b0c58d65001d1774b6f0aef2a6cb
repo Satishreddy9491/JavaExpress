@@ -1,0 +1,12 @@
+package com.javaExpress.streams;
+
+import java.util.ArrayList;
+
+public class StreamCreation {
+	public static void main(String[] args) {
+		String[] str=new String[] {"satish","jagan","sirisha","bhaskar"};
+				
+		
+	}
+}
+

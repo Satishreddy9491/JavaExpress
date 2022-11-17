@@ -1,0 +1,15 @@
+package com.javaExpress.streams;
+
+import java.util.ArrayList;
+
+public class A_EvenNumber {
+	public static void main(String[] args) {
+		ArrayList<Integer>a=new ArrayList<>();
+		for(int i=0;i<10;i++) {
+			a.add(i);
+		}
+		
+		a.stream().filter(b->(b%2==0)System.out.println(b));
+		
+	}
+}

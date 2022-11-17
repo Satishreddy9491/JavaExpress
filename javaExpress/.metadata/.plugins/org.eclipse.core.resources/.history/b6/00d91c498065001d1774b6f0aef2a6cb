@@ -1,0 +1,21 @@
+package com.javaExpress.streams;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class D_sorteds {
+	public static void main(String[] args) {
+		ArrayList<String>s=new ArrayList<String>();
+		s.add("Java");
+		s.add("python");
+		s.add("aws");
+		s.add("Php");
+		s.add("C++");
+		s.add("Kotlin");
+		
+		List<String> result = s.stream().map(a->a.toUpperCase()).sorted().collect(Collectors.toList());
+		System.out.println(result);
+	}
+	
+}

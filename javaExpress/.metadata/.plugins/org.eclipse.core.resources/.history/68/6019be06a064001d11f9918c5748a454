@@ -1,0 +1,5 @@
+package javaExpress.Inheritencedemo;
+
+public class DefaultMethodsInheritance implements Left,Right {
+	
+}

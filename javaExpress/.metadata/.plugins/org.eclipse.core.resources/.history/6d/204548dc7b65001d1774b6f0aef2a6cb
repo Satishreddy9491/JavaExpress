@@ -1,0 +1,14 @@
+package com.javaExpress.streams;
+
+import java.util.ArrayList;
+
+public class B_map {
+	public static void main(String[] args) {
+		ArrayList<String> a=new ArrayList<>();
+		a.add("Satish");
+		a.add("Reddy");
+		a.add("sidda");
+		a.add("venkata");
+		
+	}
+}

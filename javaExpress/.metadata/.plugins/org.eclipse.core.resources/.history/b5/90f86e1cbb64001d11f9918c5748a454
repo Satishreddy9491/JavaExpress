@@ -1,0 +1,30 @@
+package com.javaExpress.functions;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Function;
+
+public class BankTest {
+	public static void main(String[] args) {
+		List<Bank> l=new ArrayList<>();
+		l.add(new Bank("Satish", 45678));
+		l.add(new Bank("Reddy", 98765));
+		l.add(new Bank("Sidda", 123));
+		l.add(new Bank("murthi", 9876));
+		
+		Function<Bank, String> f=s -> s.getName();
+		for(Bank r:l) {
+			if(f.apply(r)!=null) {
+				System.out.println(r.getName());
+			}
+		}
+		
+		Function<Bank, Integer> f1=s -> s.getAccNo();
+		for(Bank r:l) {
+			if(f.apply(r)!=null) {
+				System.out.println(r.getAccNo());
+			}
+		}
+	}
+	
+}

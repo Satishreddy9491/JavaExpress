@@ -1,0 +1,15 @@
+package com.javaExpress.lambdas;
+@FunctionalInterface
+
+interface B{
+	void m1();
+}
+public class A {
+	public static void main(String[] args) {
+		B obj=()->{
+			System.out.println("M1 method executed");
+		};
+		
+		obj.m1();
+	}
+}

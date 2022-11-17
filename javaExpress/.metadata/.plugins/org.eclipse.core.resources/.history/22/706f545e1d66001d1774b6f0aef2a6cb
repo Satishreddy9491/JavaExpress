@@ -1,0 +1,8 @@
+package com.javaExpress.assignments;
+
+public class HdfcBank {
+	String name;
+	Integer salary;
+	Integer balance ;
+	
+}

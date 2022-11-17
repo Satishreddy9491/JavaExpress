@@ -1,0 +1,18 @@
+package com.javaExpress.streams;
+
+import java.util.ArrayList;
+
+public class J_AllMatch {
+	public static void main(String[] args) {
+		ArrayList<String> s = new ArrayList<String>();
+		s.add("Java");
+		s.add("python");
+		s.add("aws");
+		s.add("Php");
+		s.add("C++");
+		s.add("Kotlin");
+		
+		boolean result = s.stream().anyMatch(a->a.contains("java"));
+		System.out.println(result);
+	}
+}

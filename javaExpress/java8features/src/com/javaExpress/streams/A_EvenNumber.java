@@ -1,0 +1,19 @@
+package com.javaExpress.streams;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class A_EvenNumber {
+	public static void main(String[] args) {
+		ArrayList<Integer>a=new ArrayList<>();
+		for(int i=0;i<10;i++) {
+			a.add(i);
+		}
+		
+		List<Integer> result=a.stream().filter(b->(b%2==0)).collect(Collectors.toList());
+		System.out.println(result);
+		
+	}
+}

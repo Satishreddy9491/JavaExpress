@@ -1,0 +1,26 @@
+package com.javaExpress.streams;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class I_Map {
+	public static void main(String[] args) {
+		ArrayList<Integer> s=new ArrayList<>();
+		s.add(23);
+		s.add(12);
+		s.add(33);
+		s.add(78);
+		s.add(98);
+		s.add(89);
+		
+//		if we want add the 10 with each element {33,22,43,88,108,99}
+		
+		List<Integer> result = s.stream().map(a->a+10).collect(Collectors.toList());
+		System.out.println(result);
+		
+		List<Integer> result1 = s.stream().filter(a->a>30).map(a->a+10).collect(Collectors.toList());
+		System.out.println(result1);
+		
+	}
+}

@@ -1,0 +1,11 @@
+package com.javaExpress.predicates;
+
+public class A {
+	public static boolean checkNumber(int num) {
+		return num==2020;
+	}
+	public static void main(String[] args) {
+		System.out.println(checkNumber(8787));
+		System.out.println(checkNumber(2020));
+	}
+}

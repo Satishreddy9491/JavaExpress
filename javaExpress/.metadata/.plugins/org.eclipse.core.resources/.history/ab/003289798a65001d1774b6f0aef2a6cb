@@ -1,0 +1,14 @@
+package com.javaExpress.streams;
+
+import java.util.ArrayList;
+import java.util.stream.Stream;
+
+public class H_streams {
+	public static void main(String[] args) {
+		int a[]= {1,2,4,5,7,8,6,3};
+		
+		Stream<int[]> result = Stream.of(a);
+		result.forEach(n->System.out.println(n));
+		
+	}
+}

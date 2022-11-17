@@ -1,0 +1,8 @@
+package com.javaExpress.streams;
+
+public class Employe {
+	String name;
+	Integer salary;
+	
+	
+}

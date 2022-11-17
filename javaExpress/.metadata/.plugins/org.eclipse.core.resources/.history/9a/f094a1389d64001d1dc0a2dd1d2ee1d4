@@ -1,0 +1,8 @@
+package com.javaExpress.bank;
+
+//In this interface is know the "WHY  WE NEED THE DEFAULT METHODS"
+
+interface IBank {
+	void withdraw();
+	void deposit();
+}

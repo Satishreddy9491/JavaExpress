@@ -1,0 +1,36 @@
+package com.javaExpress.streams;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Comparator_Streams {
+	public static void main(String[] args) {
+		ArrayList<Employe>a=new ArrayList<>();
+		a.add(new Employe("satish",23456789));
+		a.add(new Employe("reddy",5678));
+		a.add(new Employe("venkata",987654567));
+		a.add(new Employe("sidda",1234543));
+		a.add(new Employe("murthi",43212345));
+		
+		
+		List<Employe> employeeresult = a.stream()
+				.sorted(Comparator.comparing(Employe::getSalary))
+				.collect(Collectors.toList());
+		 System.out.println(employeeresult);
+		 
+		 System.out.println();
+		 
+		 List<Employe> employeeresult1 = a.stream()
+					.sorted(Comparator.comparing(Employe::getSalary).reversed())
+					.collect(Collectors.toList());
+		 System.out.println(employeeresult1);
+		 
+		 long count = a.parallelStream().filter(s->s.getSalary()<13300).count();
+		 System.out.println(count);
+	}
+	
+	
+	
+}

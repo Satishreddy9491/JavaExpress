@@ -1,0 +1,5 @@
+package javaExpress.Inheritencedemo;
+
+public interface Right {
+
+}

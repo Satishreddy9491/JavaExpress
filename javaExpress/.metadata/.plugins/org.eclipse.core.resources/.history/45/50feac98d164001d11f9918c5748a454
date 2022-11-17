@@ -1,0 +1,10 @@
+package com.javaExpress.suppliers;
+
+import java.util.function.Supplier;
+
+public class A_RandomNumber {
+	public static void main(String[] args) {
+		Supplier<String> s=()->"satish";
+		System.out.println(s.get());
+	}
+}

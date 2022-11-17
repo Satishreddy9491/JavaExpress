@@ -1,0 +1,17 @@
+package com.javaExpress.lambdas;
+
+interface IAdd{
+	void add(int a, int b);
+}
+
+public class Addition {
+	public static void main(String[] args) {
+		
+		IAdd obj=(a,b)->{
+			System.out.println(a+b);
+		};
+		
+		obj.add(12,13);
+	}
+
+}

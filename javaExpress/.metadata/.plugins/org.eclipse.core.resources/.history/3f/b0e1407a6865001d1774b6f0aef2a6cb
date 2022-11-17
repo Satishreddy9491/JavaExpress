@@ -1,0 +1,13 @@
+package com.javaExpress.suppliers;
+
+//How to generate 6 digit Random OTP using Suppliers?
+//How to generate Random Password using Suppliers?
+import java.util.Date;
+import java.util.function.Supplier;
+
+public class A_Date {
+	public static void main(String[] args) {
+		Supplier<Date> s=()->new Date();
+		System.out.println(s.get());
+	}
+}
